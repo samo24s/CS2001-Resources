@@ -14,6 +14,10 @@
                        The css class of the menu is "navlist"
                        Check lecture slides about lists, an example of a more basic menu, and CSS class selector-->
             <ul class="navlist">
+                <li><a href="/">Home</a> </li>
+                <li><a href="/register">Register</a> </li>
+                <li><a href="/login">Login</a> </li>
+                <li><a href="/help">Help</a> </li>
             </ul>
          </nav>
         <main>
@@ -22,7 +26,8 @@
             </aside>
             <section>
                 <form class="center" novalidate>
-                <!-- ToDo: Implement the form containing 
+                <!-- ToDo: Implement the form containing
+                    
                            Name - type text
                            email- type text
                            password - type text
@@ -33,11 +38,29 @@
                            and how to create a button that would react to a click Event
                         -->
                     <!-- Example given for user type checkboxes-->
-                    
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" name="password"><br>
+                    <label for="rpassword">Re-Type Password:</label><br>
+                    <input type="text" id="rpassword" name="rpassword"><br>
+
+
+
                     <input type="checkbox" id="buyer" name="buyer" value="buyer">
                     <label for="buyer">I want to buy produce directly from allotment owners.</label><br>
                     <input type="checkbox" id="seller" name="seller" value="seller">
-                    <label for="seller">I want to sell produce from my allotment.</label><br><br>
+                    <label for="seller">I want to sell produce from my allotment.</label><br>
+                    <p></p>
+
+                    <input type="checkbox" id="terms" name="terms" value="terms">
+                    <label for="terms">I agree to the <a href="/terms">Terms of Use</a> and <a href="/privacy">Privacy Policy</a></label><br>
+
+                    <input type="submit" id="register" name="register" value="Register">
+                    <label for="register"><a href="/learnmore">Learn More</a></label><br>
 
                     <br><br>
                 </form>
